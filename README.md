@@ -1,4 +1,4 @@
-# 📚 hq-quadrix - Meu projeto
+# 📚 hq-quadrix - Meu projeto - New
 
 > Uma plataforma interativa para leitura e apreciação de histórias em quadrinhos online.
 
