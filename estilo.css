@@ -1,6 +1,8 @@
 body {
+  color: #fff;
   margin: 0;
   background-color: black
+  
 }
 header{
   background-color: rgba(97, 95, 95, 0.418);
