@@ -1,4 +1,4 @@
-# 📚 hq-quadrix
+# 📚 hq-quadrix!
 
 > Uma plataforma interativa para leitura e apreciação de histórias em quadrinhos online.
 
