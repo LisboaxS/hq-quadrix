@@ -1,31 +1,83 @@
-body {
-  color: #fff;
+*{
+  padding: 0;
   margin: 0;
-  background-color: black
+}
+
+body{
+  min-height: 100vh;
+  background: #0a0a0afa;
+
+}
+/* Navbar */
+nav {
+  background: #0a0a0a;
+}
+
+nav img {
+  width: 80px;
+}
+
+nav input {
+  width: 400px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  flex-direction: row;
   
 }
 
-header {
-  background-color: rgba(97, 95, 95, 0.418);
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao{
+  display: flex;
+  align-items: center;
+  
+}
+
+.pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+nav a{
+  
   padding: 20px;
-  border-color: #fdd3177a;
-}
-.links{
-  text-align: center;
-  
-}
-li {
-  display: inline;  
-}
-a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
+  align-items: center;
+ 
 
 }
-a:hover{
+
+nav a:hover {
+  background-color: rgb(17, 17, 17);
   color: orange;
+  border-radius: 20px;
 }
+
+.home:first-child{
+  margin-right: auto;
+  background: none;
+}
+/* Imagens de Desconto */
+.marketing {
+  display: flex;
+  justify-content: space-around;
+  /*Atenção (padding ou margin)*/
+  padding: 50px;
+  
+
+}
+
 footer {
+
   background: #0a0a0a;
   color: #fff;
   padding: 30px;
