@@ -13,7 +13,7 @@ body{
 /* Navbar */
 
 nav {
-  background: #0a0a0a;
+  background: #2b2a2a;
   padding: 10px 20px;
 }
 
@@ -181,7 +181,7 @@ button:hover{
 
 footer {
   text-align: center;
-  background: #0a0a0a;
+  background: #2b2a2a;
   color: #fff;
   padding: 50px;
 }
