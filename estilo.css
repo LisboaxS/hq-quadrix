@@ -22,7 +22,8 @@ nav input {
   height: 30px;
   border-radius: 20px;
   border: none;
-  flex-direction: row;
+  background: #1b1b1b;
+  color: white;
 
 }
 nav ul {
@@ -70,7 +71,6 @@ nav a:hover {
   /*Atenção (padding ou margin)*/
   padding: 50px;
   
-
 }
 
 footer {
