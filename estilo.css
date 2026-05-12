@@ -1,16 +1,20 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body{
   min-height: 100vh;
   background: #0a0a0afa;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Navbar */
+
 nav {
   background: #2b2a2a;
+  padding: 10px 20px;
 }
 
 nav img {
@@ -22,10 +26,11 @@ nav input {
   height: 30px;
   border-radius: 20px;
   border: none;
+  padding-left: 15px;
   background: #1b1b1b;
   color: white;
-
 }
+
 nav ul {
   width: 100%;
   list-style: none;
@@ -37,23 +42,28 @@ nav ul {
 .navegacao {
   display: flex;
   align-items: center;
-
 }
+
 .pesquisa {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: relative;
 }
+
+.icone-pesquisa{
+  width: 20px;
+  position: absolute;
+  right: 10px;
+}
+
 nav a{
-  
   padding: 20px;
   text-decoration: none;
   color: #fff;
   align-items: center;
- 
-
 }
+
 nav a:hover {
   background-color: rgb(17, 17, 17);
   color: orange;
@@ -64,20 +74,138 @@ nav a:hover {
   margin-right: auto;
   background: none;
 }
-/* Imagens de Desconto */
-.marketing {
+
+/* LOGIN */
+
+main{
   display: flex;
-  justify-content: space-around;
-  /*Atenção (padding ou margin)*/
-  padding: 50px;
-  
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
 }
 
-footer {
+.login-container{
+  width: 100%;
+  max-width: 1100px;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
 
+.login-imagem{
+  width: 50%;
+}
+
+.login-imagem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-box{
+  width: 50%;
+  padding: 60px;
+  color: white;
+}
+
+.login-box h1{
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.login-box p{
+  color: #bcbcbc;
+  margin-bottom: 30px;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.campo label{
+  margin-bottom: 8px;
+}
+
+.campo input{
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background: #1d1d1d;
+  color: white;
+  padding-left: 15px;
+}
+
+.opcoes{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.opcoes a{
+  color: orange;
+  text-decoration: none;
+}
+
+button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background: orange;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  background: rgb(209, 136, 0);
+}
+
+.cadastro{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cadastro a{
+  color: orange;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
   text-align: center;
   background: #2b2a2a;
   color: #fff;
-  padding: 30px;
+  padding: 50px;
 }
-  
+
+/* Responsivo */
+
+@media(max-width: 900px){
+
+  .login-container{
+    flex-direction: column;
+  }
+
+  .login-imagem,
+  .login-box{
+    width: 100%;
+  }
+
+  nav ul{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav input{
+    width: 250px;
+  }
+
+}    
