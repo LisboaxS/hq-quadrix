@@ -31,14 +31,32 @@
       </ul>
     </nav>
   </header>
+<!-- Carrossel -->
+   <section class="carrossel-wrapper">
+  <div class="carrossel-track">
+    <div class="carrossel-slide">
+      <img src="./imagens/fotos-redimencionadas/desconto.png" alt="Desconto">
+    </div>
+    <div class="carrossel-slide">
+      <img src="./imagens/fotos-redimencionadas/frete-gratis.png" alt="Frete Grátis">
+    </div>
+    <div class="carrossel-slide">
+      <img src="./imagens/fotos-redimencionadas/sua-jornada.png" alt="Sua Jornada">
+    </div>
+  </div>
 
-    <section>
-      <article class="marketing">
-        <img src="./imagens/fotos-redimencionadas/desconto.png" alt="Desconto" width="370">
-        <img src="./imagens/fotos-redimencionadas/frete-gratis.png" alt="Desconto" width="370">
-        <img src="./imagens/fotos-redimencionadas/sua-jornada.png" alt="Desconto" width="370">
-    </section>
+  <button class="carrossel-btn prev" onclick="moverCarrossel(-1)">&#8249;</button>
+  <button class="carrossel-btn next" onclick="moverCarrossel(1)">&#8250;</button>
+
+  <div class="carrossel-dots">
+    <span class="dot ativo" onclick="irParaSlide(0)"></span>
+    <span class="dot" onclick="irParaSlide(1)"></span>
+    <span class="dot" onclick="irParaSlide(2)"></span>
+  </div>
+</section>
     
     <footer >Copyrigth &copy; 2026 - Todos os direitos reservados - Comix &reg;</footer>
 </body>
 </html>
+
+<!--https://baudashqs.com/-->

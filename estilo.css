@@ -74,7 +74,79 @@ nav a:hover {
   margin-right: auto;
   background: none;
 }
+/* carrossel */
+.carrossel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
 
+.carrossel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrossel-slide {
+  min-width: 100%;
+}
+
+.carrossel-slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 48px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.carrossel-btn:hover {
+  background: rgba(255, 165, 0, 0.8);
+  color: black;
+}
+
+.prev { left: 16px; }
+.next { right: 16px; }
+
+.carrossel-dots {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.ativo {
+  background: orange;
+  transform: scale(1.3);
+}
 /* LOGIN */
 
 main{
@@ -184,7 +256,7 @@ footer {
   background: #2b2a2a;
   color: #fff;
   padding: 50px;
-  
+
 }
 
 /* Responsivo */
@@ -209,4 +281,4 @@ footer {
     width: 250px;
   }
 
-}    
+}
