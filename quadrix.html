@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quadrix</title>
-  <link rel="stylesheet" href="./estilo.css">
-</head>
-<body>
-  <header class="contentHeader">
-    <nav>
-      <ul>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrix</title>
+    <link rel="stylesheet" href="./estilo.css">
+  </head>
 
-        <li class="home">
-          <a href="quadrix.html" class="home">
-            <img src="./imagens/png-quadrix.png" alt="Logo">
-          </a>
-        </li>
+  <body>
+    <header class="contentHeader">
+      <nav>
+        <ul>
 
-        <div class="pesquisa">
-          <input type="search" placeholder="Pesquise">
-          <img src="./imagens/search-big.svg" alt="Pesquisa" class="icone-pesquisa">
-      </div>
+          <li class="home">
+            <a href="quadrix.html" class="home">
+              <img src="./imagens/png-quadrix.png" alt="Logo">
+            </a>
+          </li>
 
-        <div class="navegacao">
-          <li><a href="livros.html">Livros</a></li>
-          <li><a href="suporte.html">Suporte</a></li>
-          <li><a href="login.html">Login</a></li>
+          <div class="pesquisa">
+            <input type="search" placeholder="Pesquise">
+            <img src="./imagens/search-big.svg" alt="Pesquisa" class="icone-pesquisa">
         </div>
 
-      </ul>
-    </nav>
-  </header>
-<!-- Carrossel -->
-   <section class="carrossel-wrapper">
-  <div class="carrossel-track">
-    <div class="carrossel-slide">
-      <img src="./imagens/fotos-redimencionadas/desconto.png" alt="Desconto">
-    </div>
-    <div class="carrossel-slide">
-      <img src="./imagens/fotos-redimencionadas/frete-gratis.png" alt="Frete Grátis">
-    </div>
-    <div class="carrossel-slide">
-      <img src="./imagens/fotos-redimencionadas/sua-jornada.png" alt="Sua Jornada">
-    </div>
-  </div>
+          <div class="navegacao">
+            <li><a href="quadrinhos.html">Quadrinhos</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+            <li><a href="login.html">Login</a></li>
+          </div>
 
-  <button class="carrossel-btn prev" onclick="moverCarrossel(-1)">&#8249;</button>
-  <button class="carrossel-btn next" onclick="moverCarrossel(1)">&#8250;</button>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="carrossel-dots">
-    <span class="dot ativo" onclick="irParaSlide(0)"></span>
-    <span class="dot" onclick="irParaSlide(1)"></span>
-    <span class="dot" onclick="irParaSlide(2)"></span>
-  </div>
-</section>
+    <!-- Carrossel -->
     
+    <section class="carrossel-wrapper">
+      <div class="carrossel-track">
+        <div class="carrossel-slide">
+          <img src="./imagens/fotos-redimencionadas/desconto.png" alt="Desconto">
+        </div>
+        <div class="carrossel-slide">
+          <img src="./imagens/fotos-redimencionadas/frete-gratis.png" alt="Frete Grátis">
+        </div>
+        <div class="carrossel-slide">
+          <img src="./imagens/fotos-redimencionadas/sua-jornada.png" alt="Sua Jornada">
+        </div>
+      </div>
+
+      <button class="carrossel-btn ant" onclick="moverCarrossel(-1)">&#8249;</button>
+      <button class="carrossel-btn prox" onclick="moverCarrossel(1)">&#8250;</button>
+
+      <!-- Pontos -->
+
+      <div class="carrossel-dots">
+        <span class="dot ativo" onclick="irParaSlide(0)"></span>
+        <span class="dot" onclick="irParaSlide(1)"></span>
+        <span class="dot" onclick="irParaSlide(2)"></span>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <img src="./imagens/hqs/batman-absoluto.webp" alt="batman-absoluto">
+          <h4>Batman</h6>
+      </div>
+      
+      <div class="card">
+        <img src="./imagens/hqs/flash-absoluto.png" alt="flash-absoluto">
+        <h4>Flash</h6>
+      </div>
+
+      <div class="card">
+        <img src="./imagens/hqs/tartarugas-ninja-idw.jpg" alt="batman-absoluto">
+          <h4>Tartarugas Ninjas IDW</h6>
+      </div>
+    </section>
+
+ 
+
+
+    <script src="carrossel.js"></script>
     <footer >Copyrigth &copy; 2026 - Todos os direitos reservados - Comix &reg;</footer>
-</body>
+  </body>
 </html>
 
 <!--https://baudashqs.com/-->
