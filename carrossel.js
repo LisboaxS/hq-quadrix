@@ -1,4 +1,3 @@
-{/* <script>
   let atual = 0;
   const slides = document.querySelectorAll('.carrossel-slide');
   const dots = document.querySelectorAll('.dot');
@@ -19,6 +18,5 @@
     atualizarCarrossel();
   }
 
-  // Passa automaticamente a cada 4 segundos
-  setInterval(() => moverCarrossel(1), 4000);
-</script> */}
+  /* Passa automaticamente a cada 7 segundos
+  setInterval(() => moverCarrossel(1), 7000); */
