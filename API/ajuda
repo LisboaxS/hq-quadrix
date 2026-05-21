@@ -1,0 +1,6 @@
+
+# 1. Instale as dependências (faça isso primeiro)
+npm install
+
+# 2. Inicie o projeto (faça isso depois que a instalação terminar)
+npm start
