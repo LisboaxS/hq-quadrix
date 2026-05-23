@@ -22,9 +22,9 @@ Este projeto foi construído com as seguintes ferramentas:
 | Tecnologia | Finalidade |
 | :--- | :--- |
 | **HTML5/CSS3** | Estruturação e estilização da interface. |
-| **JavaScript/React** | Lógica de navegação e interatividade do leitor. |
-| **Node.js** | Ambiente de execução do backend (se aplicável). |
-| **MySQL/MongoDB** | Armazenamento de dados das HQs e usuários. |
+| **JavaScript** | Lógica de navegação e interatividade do leitor. |
+| **Node.js** | Ambiente de execução do backend. |
+| **MySQL** | Armazenamento de dados das HQs e usuários. |
 
 ---
 

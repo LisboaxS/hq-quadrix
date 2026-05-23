@@ -1,11 +1,11 @@
 import express from 'express'
 const app = express()
+const port = 3000;
 
-app.get('/usuario', (req, res) =>{
-  res.send('Olá Mundo')
+app.use(express.static('../public'));
 
+app.listen(port, () => {
+  console.log(`Servidor rodando em... http://localhost:${port}`)
 })
-
-app.listen(3000)
 
 // node --watch server.js
