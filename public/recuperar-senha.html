@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Quadrix</title>
-  <link rel="stylesheet" href="./css/estilo.css">
+  <title>Recuperar Senha - Comix</title>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
   <header>
     <nav>
       <ul>
@@ -34,44 +33,24 @@
   </header>
 
   <main>
-    <section class="login-container">
-      <div class="login-imagem">
-        <img src="./imagens/logos/logo-quadrix.png" alt="Logo Quadrix">
-      </div>
-
-      <div class="login-box">
-        <h1>Bem-vindo</h1>
-        <p>Entre na sua conta para continuar.</p>
-
-        <form>
+    <form>
+      <section class="recuperacao-container">
+        
+        <div class="recuperacao-box">
+          <h1>Recuperação de senha</h1>
+          <p>Digite seu e-mail para a recuperação de senha</p>
+          
           <div class="campo">
             <label>Email</label>
             <input type="email" placeholder="Digite seu email">
           </div>
-
-          <div class="campo">
-            <label>Senha</label>
-            <input type="password" placeholder="Digite sua senha">
+          
+          <div>
+            <button class="botao-recuperacao" type="submit"> Enviar</button>
           </div>
-
-          <div class="opcoes">
-            <label>
-              <input type="checkbox">
-              Lembrar-me
-            </label>
-
-            <a href="./recuperar-senha.html">Esqueci minha senha</a>
-          </div>
-
-          <button type="submit">Entrar</button>
-
-          <div class="cadastro">
-            Não possui conta?
-            <a href="cadastro.html">Criar conta</a>
-          </div>
-        </form>
-      </div>
-    </section>
+        </div>
+      </section>
+    </form>
   </main>
 
 </body>

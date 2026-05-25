@@ -161,14 +161,12 @@ nav a:hover {
 .container{
   width: 1280px;
   /* height: 900px; */
-  border: 1px solid red;
   justify-self: center;
   margin: 60px;
 
 }
 
 .card {
-  border: red 1px solid;
   max-width: 240px;
   margin-top: 5px;
   padding-left: 1%;
@@ -223,6 +221,18 @@ nav a:hover {
   font-weight: bold;
 }
 
+.entrega-rapida{
+  display: contents;
+  align-self: center;
+  justify-content: center;
+}
+
+.entrega-rapida img{
+  max-width: 1000px;
+  width: 40%;
+  border-radius: 50px;
+}
+
 /* LOGIN */
 
 main {
@@ -232,14 +242,17 @@ main {
   padding: 60px;
 }
 
-.login-container {
+.login-container, .recuperacao-container {
   width: 100%;
   max-width: 1100px;
   background: #111;
   border-radius: 20px;
   overflow: hidden;
-  display: flex;
   box-shadow: 0px 0px 20px rgb(10, 6, 6);
+}
+
+.login-container{
+  display: flex;
 }
 
 .login-imagem {
@@ -259,8 +272,13 @@ main {
   color: white;
 }
 
+.recuperacao-box{
+  width: 100%;
+  padding: 60px;
+}
+
 .login-box h1 {
-  font-size: 42px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
@@ -269,8 +287,15 @@ main {
   margin-bottom: 10px;
 }
 
+.recuperacao-box h1 {
+  color: rgba(255, 166, 0, 0.945);
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
 .login-box p,
-.cadastro-box p {
+.cadastro-box p,
+.recuperacao-box p {
   color: #bcbcbc;
   margin-bottom: 30px;
 }
@@ -306,7 +331,7 @@ main {
   text-decoration: none;
 }
 
-button {
+button{
   width: 100%;
   height: 45px;
   border: none;
@@ -316,6 +341,10 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.botao-recuperacao{
+  width: 50%;
 }
 
 button:hover {
