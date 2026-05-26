@@ -18,5 +18,5 @@
     atualizarCarrossel();
   }
 
-  /* Passa automaticamente a cada 7 segundos
-  setInterval(() => moverCarrossel(1), 7000); */
+  
+  setInterval(() => moverCarrossel(1), 7000); 
