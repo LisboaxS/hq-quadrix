@@ -233,6 +233,12 @@ nav a:hover {
   border-radius: 50px;
 }
 
+/* Comprar */
+
+.comprar img{
+  width: 400px;
+}
+
 /* LOGIN */
 
 main {
