@@ -36,4 +36,4 @@ Para clonar e executar esta aplicação em sua máquina local, você precisará 
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/hq-quadrix.git](https://github.com/seu-usuario/hq-quadrix.git)
+   git clone https://github.com/seu-usuario/hq-quadrix.git
