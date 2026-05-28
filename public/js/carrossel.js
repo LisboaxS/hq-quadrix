@@ -18,5 +18,4 @@
     atualizarCarrossel();
   }
 
-  
   setInterval(() => moverCarrossel(1), 7000); 

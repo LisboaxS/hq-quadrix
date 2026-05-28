@@ -235,8 +235,20 @@ nav a:hover {
 
 /* Comprar */
 
-.comprar img{
+.container-imagem{
+  max-width: 630px;
+  width: calc(51% - 30px);
+  margin-right: 0;
+  float: left;
+}
+
+.bat img{
   width: 400px;
+  display: flex;
+}
+
+.sumario{
+  float: right;
 }
 
 /* LOGIN */
