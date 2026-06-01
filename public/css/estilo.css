@@ -198,10 +198,15 @@ nav a:hover {
   transition: 0.3s;
 }
 
-.preco p{
+.preco p, .preco-sum{
   font-size: large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: orange;
+}
+
+.preco-sum{
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
 .boxBotton {
@@ -235,29 +240,141 @@ nav a:hover {
 
 /* Comprar */
 
+.produto-container{
+  width:1138px;
+  margin:60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+  align-items:flex-start;
+}
+
 .container-imagem{
-  max-width: 630px;
-  width: calc(51% - 30px);
-  margin-right: 0;
-  float: left;
+  max-width: 550px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid rgb(54,49,45);
 }
 
 .bat img{
-  width: 400px;
-  display: flex;
+  width: 100%;
 }
 
-.sumario{
+.sumario, .descricao{
+  border-radius: 30px;
+  border: 1px solid rgb(54, 49, 45);
+  max-width: 1000px;
   float: right;
+  width: 49%;
+  padding: 30px;
 }
+
+
+.topo-sumario{
+  margin-bottom: 10px;
+}
+
+.estoque {
+  padding: 0px 9px; 
+  font-size: 12px; 
+  background-color: rgb(130 209 117 / .2); 
+  color: #62af57;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.sumario h1 {
+  margin-bottom: 50px;
+}
+
+.acoes-produto{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+
+.controle-qtd{
+  width:160px;
+  height:55px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#151515;
+  border:1px solid rgb(54,49,45);
+  border-radius:50px;
+  padding:0px 20px;
+  overflow: hidden;
+}
+
+
+.controle-qtd button{
+  width:auto;
+  height: auto;
+  background:none;
+  color:white;
+  font-size:24px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.controle-qtd span{
+  font-size:18px;
+  font-weight:bold;
+}
+
+.btn-comprar{
+  width:auto;
+  min-width:220px;
+  height:55px;
+  padding:0 35px;
+  border-radius:50px;
+  background:orange;
+  color: white;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.btn-favorito{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  background:#151515;
+  border:1px solid rgb(54,49,45);
+  color:white;
+  font-size:22px;
+}
+
+.descricao{
+  width:100%;
+  margin-top: 10px;
+  color:white;
+  margin-bottom: 50px;
+}
+.relacionados{
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  line-height: 1.2307692308;
+  margin-bottom: 40px;
+  text-align: left;
+  color: var(--accent);
+}
+
 
 /* LOGIN */
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 60px;
+}
+
+.login-main{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:60px;
 }
 
 .login-container, .recuperacao-container {
