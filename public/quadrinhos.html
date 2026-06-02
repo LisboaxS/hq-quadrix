@@ -1,36 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadrinhos - Comix </title>
-    <link rel="stylesheet" href="./css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadrinhos - Quadrix</title>
+  <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-  <header class="contentHeader">
-    <nav>
-      <ul>
+    <header class="contentHeader">
+      <nav>
+        <ul>
 
-        <li class="home">
-          <a href="./index.html" class="home">
-            <img src="./imagens/logos/png-quadrix.png" alt="Logo">
+          <li class="home">
+            <a href="./index.html" class="home">
+              <img src="./imagens/logos/png-quadrix.png" alt="Logo">
+            </a>
+          </li>
+
+          <div class="pesquisa">
+            <form>
+              <input type="search" placeholder="Pesquise" id="pesquisaCatalogo">
+              <img src="./imagens/icons/search-big.svg" alt="Pesquisa" class="icone-pesquisa">
+            </form>
+          </div>
+
+          <div class="navegacao">
+            <li><a href="./quadrinhos.html">Quadrinhos</a></li>
+            <li><a href="./suporte.html">Suporte</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </div>
+
+        </ul>
+      </nav>
+    </header>
+
+<main>
+  <section class="catalogo-header">
+    <h1>Catálogo de Quadrinhos</h1>
+    <p>Explore nossa coleção de HQs, mangás e edições especiais.</p>
+  </section>
+  <section class="filtros">
+      <button class="filtro ativo" data-filtro="todos">Todos</button>
+      <button class="filtro" data-filtro="dc">DC</button>
+      <button class="filtro" data-filtro="marvel">Marvel</button>
+      <button class="filtro" data-filtro="manga">Mangás</button>
+      <button class="filtro" data-filtro="independente">Independentes</button>
+  </section>
+  <section class="catalogo-grid">
+      <!-- Batman Absoluto -->
+      <div class="card" data-categoria="dc">
+          <a href="./absolute-batman.html">
+              <img src="./imagens/hqs/batman-absoluto.webp" alt="Batman Absoluto">
           </a>
-        </li>
+          <div class="linkCard">
+              <a href="./absolute-batman.html">Batman Absoluto vol. #01</a>
+          </div>
+          <div class="preco">
+              <p>R$ 15,31</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./absolute-batman.html">
+                  <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+      <!-- Flash -->
+      <div class="card" data-categoria="dc">
+          <a href="./flash.html">
+              <img src="./imagens/hqs/flash-absoluto.png" alt="Flash Absoluto">
+          </a>
+          <div class="linkCard">
+              <a href="./flash.html">Flash Absoluto vol. #01</a>
+          </div>
+          <div class="preco">
+              <p>R$ 19,90</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./flash.html">
+                  <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+      <!-- Tartarugas Ninja -->
+      <div class="card" data-categoria="independente">
+          <a href="./tartarugas.html">
+              <img src="./imagens/hqs/tartarugas-ninja-idw.jpg" alt="Tartarugas Ninja">
+          </a>
+          <div class="linkCard">
+              <a href="./tartarugas.html">Tartarugas Ninja - IDW</a>
+          </div>
+          <div class="preco">
+              <p>R$ 142,90</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./tartarugas.html">
+                  <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+      <!-- Cavaleiro Branco -->
+      <div class="card" data-categoria="dc">
+          <a href="./cavaleirobranco.html">
+              <img src="./imagens/hqs/cavaleiro-branco.webp" alt="Batman Cavaleiro Branco">
+          </a>
+          <div class="linkCard">
+              <a href="./cavaleirobranco.html">DC de Bolso - Batman Cavaleiro Branco</a>
+          </div>
+          <div class="preco">
+              <p>R$ 59,90</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./cavaleirobranco.html">
+                  <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+      <!-- Spawn -->
+      <div class="card" data-categoria="independente">
+          <a href="./spawn.html">
+              <img src="./imagens/hqs/spawn.jpg" alt="Spawn">
+          </a>
+          <div class="linkCard">
+              <a href="./spawn.html">Spawn: Origens vol. 01</a>
+          </div>
+          <div class="preco">
+              <p>R$ 19,90</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./spawn.html">
+                  <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+      <!-- Piada Mortal -->
+      <div class="card" data-categoria="dc">
+          <a href="./batman-piada-mortal.html">
+              <img src="./imagens/hqs/piada-mortal.webp" alt="Batman Piada Mortal">
+          </a>
+          <div class="linkCard">
+              <a href="./batman-piada-mortal.html">Batman: A Piada Mortal</a>
+          </div>
+          <div class="preco">
+              <p>R$ 32,90</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./batman-piada-mortal.html">
+                  <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+      <!-- Zumbis Marvel -->
+      <div class="card" data-categoria="marvel">
+          <a href="./zumbis-marvel.html">
+              <img src="./imagens/hqs/zumbis-marvel.webp" alt="Zumbis Marvel">
+          </a>
+          <div class="linkCard">
+              <a href="./zumbis-marvel.html">Zumbis Marvel - Preto, Branco e Sangue</a>
+          </div>
+          <div class="preco">
+              <p>R$ 139,90</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./zumbis-marvel.html">
+                  <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+      <!-- Homem-Aranha Noir -->
+      <div class="card" data-categoria="marvel">
+          <a href="./homem-aranha-noir.html">
+              <img src="./imagens/hqs/spider-noir.webp" alt="Homem-Aranha Noir">
+          </a>
+          <div class="linkCard">
+              <a href="./homem-aranha-noir.html">Homem-Aranha Noir</a>
+          </div>
+          <div class="preco">
+              <p>R$ 59,90</p>
+          </div>
+          <div class="boxBotton">
+              <a href="./homem-aranha-noir.html">
+                <button type="button" class="bottonConteudo">Comprar</button>
+              </a>
+          </div>
+      </div>
+  </section>
 
-        <div class="pesquisa">
-          <input type="search" placeholder="Pesquise">
-          <img src="./imagens/icons/search-big.svg" alt="Pesquisa" class="icone-pesquisa">
-        </div>
+  <div class="paginacao">
+      <button class="pag-btn">◀</button>
+      <span>1</span>
+      <button class="pag-btn">▶</button>
+  </div>
 
-        <div class="navegacao">
-          <li><a href="./quadrinhos.html">Quadrinhos</a></li>
-          <li><a href="./suporte.html">Suporte</a></li>
-          <li><a href="./login.html">Login</a></li>
-        </div>
+</main>
 
-      </ul>
-    </nav>
-  </header>
-
+  <footer>Copyright &copy; 2026 - Todos os direitos reservados - Comix &reg;</footer>
+  <script src="./js/catalogo.js"></script>
 </body>
 </html>

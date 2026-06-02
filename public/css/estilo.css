@@ -363,6 +363,150 @@ nav a:hover {
   color: var(--accent);
 }
 
+/* SUPORTE */
+.suporte-container{
+  max-width:1200px;
+  margin:60px auto;
+}
+
+.suporte-header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.suporte-header h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.suporte-header p{
+  color:#aaa;
+}
+
+.suporte-cards{
+  display:flex;
+  gap:20px;
+  margin-bottom:40px;
+  flex-wrap:wrap;
+}
+
+
+.suporte-card{
+  flex:1;
+  min-width:250px;
+  background:#111;
+  border:1px solid rgb(54,49,45);
+  border-radius:20px;
+  padding:25px;
+}
+.suporte-card svg{
+  color: rgba(255, 166, 0, 0.685);
+}
+
+.suporte-card h3{
+  color:orange;
+  margin-bottom:15px;
+}
+
+.form-suporte{
+  background:#111;
+  border:1px solid rgb(54,49,45);
+  border-radius:20px;
+  padding:30px;
+}
+
+.form-suporte h2{
+  margin-bottom:20px;
+}
+
+.form-suporte input,
+.form-suporte textarea{
+  width:100%;
+  background:#1b1b1b;
+  border:none;
+  border-radius:12px;
+  color:white;
+  padding:15px;
+  margin-bottom:15px;
+}
+
+.form-suporte textarea{
+  resize:none;
+  height:150px;
+}
+
+.form-suporte button{
+  max-width:250px;
+}
+
+/* Quadrinhos */
+.catalogo-header{
+  text-align:center;
+  padding:60px 20px 30px;
+}
+
+.catalogo-header h1{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.catalogo-header p{
+  color:#aaa;
+}
+
+.filtros{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-bottom:40px;
+}
+
+.filtro{
+  width:auto;
+  padding:0 20px;
+  height:45px;
+  border-radius:30px;
+  background:#111;
+  color:white;
+  border:1px solid rgb(54,49,45);
+}
+
+.filtro.ativo{
+  background:orange;
+  color:black;
+}
+
+.catalogo-grid{
+  width:1280px;
+  max-width:95%;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, 240px);
+  justify-content: center;
+  gap:25px;
+}
+
+.catalogo-grid .card{
+  max-width:none;
+  width:100%;
+  margin:0;
+}
+
+.paginacao{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  margin:50px 0;
+}
+
+.pag-btn{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+}
+
 
 /* LOGIN */
 
